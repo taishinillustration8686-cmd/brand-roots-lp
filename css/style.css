@@ -539,9 +539,10 @@ nav.scrolled{height:56px;box-shadow:0 6px 26px rgba(0,0,0,.07)}
   font-size:13px;line-height:1.8;padding:12px 16px;margin:16px 0 0;
 }
 .f-submit{width:100%;margin-top:20px;cursor:pointer;border:none;font-family:var(--sans)}
-/* 申込みセクションの白ボタン指定を、フォーム内だけ打ち消す */
-.apply .form-card .f-submit{background:var(--dark);color:var(--white)}
-.apply .form-card .f-submit:hover:not(:disabled){background:var(--gold);color:var(--white)}
+/* 申込みセクションの白ボタン指定を、白カード内では打ち消す
+   （送信ボタン・アンケートボタンの両方が対象） */
+.apply .form-card .btn-primary{background:var(--dark);color:var(--white)}
+.apply .form-card .btn-primary:hover:not(:disabled){background:var(--gold);color:var(--white)}
 .f-submit:disabled{opacity:.55;cursor:wait}
 .f-note{
   text-align:center;font-size:12px;line-height:1.9;color:var(--gray);margin-top:18px;
