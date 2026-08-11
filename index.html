@@ -364,7 +364,8 @@
 
         <div class="f-row">
           <label for="f-mail">メールアドレス <span class="req">必須</span></label>
-          <input type="email" id="f-mail" name="メールアドレス" required autocomplete="email" placeholder="example@mail.com">
+          <!-- name="email" は必須。FormSubmitはこの名前の項目を見て自動返信の宛先を決める -->
+          <input type="email" id="f-mail" name="email" required autocomplete="email" placeholder="example@mail.com">
         </div>
 
         <div class="f-row">
