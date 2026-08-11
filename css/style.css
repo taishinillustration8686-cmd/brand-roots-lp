@@ -560,66 +560,6 @@ nav.scrolled{height:56px;box-shadow:0 6px 26px rgba(0,0,0,.07)}
   letter-spacing:.06em;margin-bottom:20px;
 }
 .fd-txt{font-size:14px;line-height:2.1;color:var(--gray)}
-.fd-survey{
-  margin-top:30px;padding-top:28px;border-top:1px solid var(--border);
-}
-.fds-label{
-  font-family:var(--serif);font-size:15.5px;letter-spacing:.05em;margin-bottom:18px;
-}
-.fd-survey .btn{width:100%}
-.fds-note{font-size:12px;color:var(--gray);margin-top:14px;line-height:1.9}
-
-/* ---------- 法務ページ（プライバシーポリシー） ---------- */
-.legal{padding:150px 0 100px;background:var(--white)}
-.legal-head{text-align:center;margin-bottom:52px}
-.legal-title{
-  font-family:var(--serif);font-weight:500;
-  font-size:clamp(24px,3.4vw,36px);letter-spacing:.08em;line-height:1.5;
-}
-.legal-lead{
-  font-size:14.5px;line-height:2.2;color:var(--gray);
-  padding-bottom:34px;border-bottom:1px solid var(--border);margin-bottom:42px;
-}
-.legal-sec{padding:0;margin-bottom:40px}
-.legal-sec h2{
-  font-family:var(--serif);font-size:18px;font-weight:500;
-  letter-spacing:.06em;margin-bottom:16px;
-  padding-left:14px;border-left:2px solid var(--gold);
-}
-.legal-sec p{font-size:14.5px;line-height:2.2;color:var(--gray);margin-bottom:12px}
-.legal-sec strong{color:var(--dark);font-weight:500}
-.legal-sec ul{list-style:none;margin:0 0 14px}
-.legal-sec ul li{
-  font-size:14.5px;line-height:2;color:var(--gray);
-  padding-left:20px;position:relative;
-}
-.legal-sec ul li::before{
-  content:"";position:absolute;left:4px;top:15px;
-  width:5px;height:1px;background:var(--gold);
-}
-.legal-sec a{color:var(--gold);text-underline-offset:3px}
-.legal-note{
-  background:var(--light);border-left:3px solid var(--gold);
-  padding:22px 26px;margin-top:18px;
-}
-.legal-note p{margin-bottom:8px}
-.legal-note p:last-child{margin-bottom:0}
-.legal-dl{display:grid;gap:1px;background:var(--border);border:1px solid var(--border)}
-.legal-dl>div{background:var(--white);padding:16px 20px;display:flex;gap:18px;flex-wrap:wrap}
-.legal-dl dt{font-size:13px;font-weight:500;min-width:76px;letter-spacing:.06em}
-.legal-dl dd{font-size:14px;color:var(--gray)}
-.legal-small{font-size:12.5px;color:var(--gray);margin-top:14px;line-height:1.9}
-.legal-date{
-  font-size:13px;color:var(--gray);text-align:right;
-  padding-top:26px;border-top:1px solid var(--border);
-}
-.legal-back{text-align:center;margin-top:48px}
-@media (max-width:768px){
-  .legal{padding:104px 0 76px}
-  .legal-sec h2{font-size:16.5px}
-  .legal-back .btn{width:100%}
-}
-
 /* ---------- FOOTER ---------- */
 footer{background:var(--dark);color:#8E897E;padding:56px 0 40px;text-align:center;border-top:1px solid rgba(255,255,255,.09)}
 .foot-logo{font-family:var(--en);font-size:19px;letter-spacing:.18em;color:var(--white);margin-bottom:10px}
