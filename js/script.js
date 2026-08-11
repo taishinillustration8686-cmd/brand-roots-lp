@@ -119,13 +119,22 @@
       btn.disabled = true;
       btn.textContent = '送信しています…';
 
-      fetch(form.action, {
+      // FormSubmitのAJAX用エンドポイントへ送る。
+      // 通常のエンドポイントはCAPTCHA画面もHTTP 200で返すため、
+      // 成否が判定できない（＝届いていないのに成功表示になる）。
+      // /ajax/ はJSONで success を返すので、確実に判定できる。
+      var endpoint = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+
+      fetch(endpoint, {
         method: 'POST',
         body: new FormData(form),
         headers: { 'Accept': 'application/json' }
       })
-      .then(function (res) {
-        if (!res.ok) throw new Error('status ' + res.status);
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (!data || String(data.success) !== 'true') {
+          throw new Error(data && data.message ? data.message : 'submit failed');
+        }
         // 完了メッセージに差し替える
         form.hidden = true;
         done.hidden = false;
